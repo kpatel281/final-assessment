@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -43,7 +43,7 @@
       <nav>
         <a href="/"><i class="fas fa-home"></i> Home</a>
         <a href="add-observation.html"
-          ><i class="fas fa-plus"></i> Add Observation</a
+          ><i class="fas fa-plus"></i>Add Observation</a
         >
       </nav>
 
@@ -64,55 +64,129 @@
         <form action="https://formspree.io/f/mayanejq" method="post">
           <!-- TODO: create the form based on the specification in the Final Assessment -->
           <fieldset>
-                <legend>Observation</legend>
-    
-                <label for="SpeciesGuess">Species Guess<span class="required">*</span></label><br>
-                <input type="text" name="SpeciesGuess" id="SpeciesGuess" placeholder="Great Horned Owl" maxlength="200" required>
-    
-                <label for="description">Description<span class="required">*</span></label><br>
-                <input type="text" name="description" id="description" size="65" placeholder="Roosting on fence post at the edge of a field">
-    
-                <label for="dateObs">Date Observed<span class="required">*</span></label><br>
-                <input type="date" name="dateObs" id="dateObs" required>
-    
-                <label for="notes">Notes</label><br>
-                <textarea name="notes" id="notes" rows="3" cols="68" placeholder="Notes about observation..."></textarea>
-            </fieldset>
-            <fieldset>
-              <legend>Location</legend>
+            <legend>Observation</legend>
 
-              <label for="formLat">Latitude<span class="required">*</span><span id="latError" class="required"></span></label><br>
-              <input type="text" id="formLat" name="formLat" placeholder="43.7955" required>
+            <label for="SpeciesGuess"
+              >Species Guess<span class="required">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="SpeciesGuess"
+              id="SpeciesGuess"
+              placeholder="Great Horned Owl"
+              maxlength="200"
+              required
+            />
 
-              <label for="formLong">Longitude<span class="required">*</span><span id="lngError" class="required"></span></label><br>
-              <input type="text" id="formLong" name="formLong" placeholder="-79.3496" required>
+            <label for="description"
+              >Description<span class="required">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="description"
+              id="description"
+              size="65"
+              placeholder="Roosting on fence post at the edge of a field"
+            />
 
-              <input type="checkbox" name="shareLoc" id="shareLoc" value="true">
-              <label for="shareLoc"> Share location information (i.e., it's ok to make this public)</label><br>
-            </fieldset>
-            <fieldset>
-              <legend>Photo</legend>
+            <label for="dateObs"
+              >Date Observed<span class="required">*</span></label
+            ><br />
+            <input type="date" name="dateObs" id="dateObs" required />
 
-              <label for="pName">Photographer Name</label><br>
-              <input type="text" name="pName" id="pName" placeholder="Karen Shu" maxlength="100" size="65">
+            <label for="notes">Notes</label><br />
+            <textarea
+              name="notes"
+              id="notes"
+              rows="3"
+              cols="68"
+              placeholder="Notes about observation..."
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Location</legend>
 
-              <label for="pEmail">Photographer Email</label><br>
-              <input type="email" name="pEmail" id="pEmail" placeholder="kshu@photos.com" size="65">
+            <label for="formLat"
+              >Latitude<span class="required">*</span
+              ><span id="latError" class="required"></span></label
+            ><br />
+            <input
+              type="text"
+              id="formLat"
+              name="formLat"
+              placeholder="43.7955"
+              required
+            />
 
-              <label for="photo">Photo</label><br>
-              <input type="file" name="photo" id="photo">
+            <label for="formLong"
+              >Longitude<span class="required">*</span
+              ><span id="lngError" class="required"></span></label
+            ><br />
+            <input
+              type="text"
+              id="formLong"
+              name="formLong"
+              placeholder="-79.3496"
+              required
+            />
 
-              <label for="licenseType">License <span class="note">(help on chossing a license)</span></label><br>
-              <select name="licenseType" id="licenseType">
-                <option value="CC-BY">Creative Commons Attribution License</option>
-                <option value="CC-BY-NC">Creative Commons Attribution-NonCommercial License</option>
-                <option value="CC-BY-SA">Creative Commons Attribution-ShareAlike License</option>
-                <option value="CC-BY-ND">Creative Commons Attribution-NoDerivs License</option>
-                <option value="CC-BY-NC-SA">Creative Commons Attribution-NonCommercial-ShareAlike License</option>
-                <option value="CC-BY-NC-ND">Creative Commons Attribution-NonCommercial-NoDerivs License</option>
-              </select>
-            </fieldset>
-            <input type="submit" value="Submit">
+            <input type="checkbox" name="shareLoc" id="shareLoc" value="true" />
+            <label for="shareLoc">
+              Share location information (i.e., it's ok to make this
+              public)</label
+            ><br />
+          </fieldset>
+          <fieldset>
+            <legend>Photo</legend>
+
+            <label for="pName">Photographer Name</label><br />
+            <input
+              type="text"
+              name="pName"
+              id="pName"
+              placeholder="Karen Shu"
+              maxlength="100"
+              size="65"
+            />
+
+            <label for="pEmail">Photographer Email</label><br />
+            <input
+              type="email"
+              name="pEmail"
+              id="pEmail"
+              placeholder="kshu@photos.com"
+              size="65"
+            />
+
+            <label for="photo">Photo</label><br />
+            <input type="file" name="photo" id="photo" />
+
+            <label for="licenseType"
+              >License
+              <span class="note">(help on chossing a license)</span></label
+            ><br />
+            <select name="licenseType" id="licenseType">
+              <option value="CC-BY">
+                Creative Commons Attribution License
+              </option>
+              <option value="CC-BY-NC">
+                Creative Commons Attribution-NonCommercial License
+              </option>
+              <option value="CC-BY-SA">
+                Creative Commons Attribution-ShareAlike License
+              </option>
+              <option value="CC-BY-ND">
+                Creative Commons Attribution-NoDerivs License
+              </option>
+              <option value="CC-BY-NC-SA">
+                Creative Commons Attribution-NonCommercial-ShareAlike License
+              </option>
+              <option value="CC-BY-NC-ND">
+                Creative Commons Attribution-NonCommercial-NoDerivs License
+              </option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Submit" />
         </form>
       </section>
     </main>
