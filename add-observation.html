@@ -67,43 +67,43 @@
                 <legend>Observation</legend>
     
                 <label for="SpeciesGuess">Species Guess<span class="required">*</span></label><br>
-                <input type="text" name="SpeciesGuess" placeholder="Great Horned Owl" maxlength="200" required>
+                <input type="text" name="SpeciesGuess" id="SpeciesGuess" placeholder="Great Horned Owl" maxlength="200" required>
     
                 <label for="description">Description<span class="required">*</span></label><br>
-                <input type="text" name="description" size="65" placeholder="Roosting on fence post at the edge of a field">
+                <input type="text" name="description" id="description" size="65" placeholder="Roosting on fence post at the edge of a field">
     
                 <label for="dateObs">Date Observed<span class="required">*</span></label><br>
-                <input type="date" name="dateObs" required>
+                <input type="date" name="dateObs" id="dateObs" required>
     
                 <label for="notes">Notes</label><br>
-                <textarea name="notes" rows="3" cols="68" placeholder="Notes about observation..."></textarea>
+                <textarea name="notes" id="notes" rows="3" cols="68" placeholder="Notes about observation..."></textarea>
             </fieldset>
             <fieldset>
               <legend>Location</legend>
 
-              <label for="latitude">Latitude<span class="required">*</span><span id="latError" class="required"></span></label><br>
-              <input type="text" id="formLat" name="latitude" placeholder="43.7955" required>
+              <label for="formLat">Latitude<span class="required">*</span><span id="latError" class="required"></span></label><br>
+              <input type="text" id="formLat" name="formLat" placeholder="43.7955" required>
 
-              <label for="longitude">Longitude<span class="required">*</span><span id="lngError" class="required"></span></label><br>
-              <input type="text" id="formLong" name="longitude" placeholder="-79.3496" required>
+              <label for="formLong">Longitude<span class="required">*</span><span id="lngError" class="required"></span></label><br>
+              <input type="text" id="formLong" name="formLong" placeholder="-79.3496" required>
 
-              <input type="checkbox" name="shareLoc" value="true">
+              <input type="checkbox" name="shareLoc" id="shareLoc" value="true">
               <label for="shareLoc"> Share location information (i.e., it's ok to make this public)</label><br>
             </fieldset>
             <fieldset>
               <legend>Photo</legend>
 
               <label for="pName">Photographer Name<br>
-              <input type="text" name="pName" placeholder="Karen Shu" maxlength="100" size="65">
+              <input type="text" name="pName" id="pName" placeholder="Karen Shu" maxlength="100" size="65">
 
               <label for="pEmail">Photographer Email</label><br>
-              <input type="email" name="pEmail" placeholder="kshu@photos.com" size="65">
+              <input type="email" name="pEmail" id="pEmail" placeholder="kshu@photos.com" size="65">
 
               <label for="photo">Photo</label><br>
-              <input type="file" name="photo">
+              <input type="file" name="photo" id="photo">
 
               <label for="licenseType">License <span class="note">(help on chossing a license)</span></label><br>
-              <select name="licenseType">
+              <select name="licenseType" id="licenseType">
                 <option value="CC-BY">Creative Commons Attribution License</option>
                 <option value="CC-BY-NC">Creative Commons Attribution-NonCommercial License</option>
                 <option value="CC-BY-SA">Creative Commons Attribution-ShareAlike License</option>

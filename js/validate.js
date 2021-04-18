@@ -10,29 +10,28 @@ function validate(event) {
   var lng = parseInt(document.getElementById("formLong").value);
   var validStatus = true;
 
-  if (isNaN(lat) || lat > 90 || lat < -90){
-    document.getElementById("latError").innerHTML = " must be a valid Latitude (-90 to 90)";
+  if (isNaN(lat) || lat > 90 || lat < -90) {
+    document.getElementById("latError").innerHTML =
+      " must be a valid Latitude (-90 to 90)";
     validStatus = false;
-  }
-  else{
+  } else {
     document.getElementById("latError").innerHTML = "";
   }
-  if(isNaN(lng) || lng > 180 || lng < -180){
-    document.getElementById("lngError").innerHTML = " must be a valid Longitude (-180 to 180)";
+  if (isNaN(lng) || lng > 180 || lng < -180) {
+    document.getElementById("lngError").innerHTML =
+      " must be a valid Longitude (-180 to 180)";
     validStatus = false;
-  }
-  else{
+  } else {
     document.getElementById("lngError").innerHTML = "";
   }
-  
-  if(validStatus){
+
+  if (validStatus) {
     return true;
-  }
-  else{
+  } else {
     return false;
   }
 
-    console.log(
+  console.log(
     "TODO - validate the longitude, latitude values before submitting"
   );
 }

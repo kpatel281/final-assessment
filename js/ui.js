@@ -116,12 +116,11 @@ function toggleLoading(isLoading) {
   // Finally, we need to disable the button, so the user doesn't click it multiple
   // times (i.e., we need to wait until the loading finishes).  We decide what to
   // do based on the value of the isLoading argument.
-  if(isLoading){
+  if (isLoading) {
     const searchButton = document.getElementById("submitButton");
     searchButton.innerHTML = '<i class="fas fa-hourglass-half"></i> Loading...';
     searchButton.disabled = true;
-  }
-  else{
+  } else {
     //fas fa-search
     const searchButton = document.getElementById("submitButton");
     searchButton.innerHTML = '<i class="fas fa-search"></i> Search';

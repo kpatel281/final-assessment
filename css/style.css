@@ -122,11 +122,11 @@ footer {
 /**
  * TODO: style the Search Form
  */
-#search input{
+#search input {
   display: unset !important;
   width: 77%;
 }
 
-#submitButton{
+#submitButton {
   width: 18.2%;
 }
